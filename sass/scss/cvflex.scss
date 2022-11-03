@@ -1,0 +1,70 @@
+@mixin roundedbox($radius: 25px, $style: solid, $size: 2px, $color: black) {
+  border-radius: $radius;
+  border: $style $size $color;
+}
+
+@mixin titleborder($style: solid, $size: 2px, $color: black) {
+  border-top: $style $size $color;
+  border-bottom: $style $size $color;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 100%;
+  font: inherit;
+  background-color: beige;
+}
+
+.document {
+  display: flex;
+  justify-content: space-between;
+}
+
+.border {
+  width: 0px;
+}
+
+@media only screen and (min-width: 1500px) {
+  .border {
+    width: 25vw;
+    background-color: brown;
+  }
+}
+
+.center {
+  background-color: beige;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navlink {
+  margin: 2px;
+  padding: 2px;
+  text-decoration: none;
+  background-color: coral;
+  @include roundedbox;
+}
+
+h1, h2 {
+  @include titleborder;
+  background-color: white;
+}
+
+.image {
+  width: calc(855 / 1203) * 25vh;
+  height: 25vh;
+  @include roundedbox;
+}
+
+table {
+  background-color: black;
+}
+
+th, td {
+  background-color:coral;
+}

@@ -1,0 +1,62 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 100%;
+  font: inherit;
+  background-color: beige;
+}
+
+.document {
+  display: flex;
+  justify-content: space-between;
+}
+
+.border {
+  width: 0px;
+}
+
+@media only screen and (min-width: 1500px) {
+  .border {
+    width: 25vw;
+    background-color: brown;
+  }
+}
+.center {
+  background-color: beige;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navlink {
+  margin: 2px;
+  padding: 2px;
+  text-decoration: none;
+  background-color: coral;
+  border-radius: 25px;
+  border: solid 2px black;
+}
+
+h1, h2 {
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+  background-color: white;
+}
+
+.image {
+  width: 17.7680798005vh;
+  height: 25vh;
+  border-radius: 25px;
+  border: solid 2px black;
+}
+
+table {
+  background-color: black;
+}
+
+th, td {
+  background-color: coral;
+}/*# sourceMappingURL=cvflex.css.map */
