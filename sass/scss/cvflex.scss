@@ -68,3 +68,8 @@ table {
 th, td {
   background-color:coral;
 }
+
+p {
+  @include roundedbox;
+  background-color: coral;
+}

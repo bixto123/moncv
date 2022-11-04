@@ -59,4 +59,10 @@ table {
 
 th, td {
   background-color: coral;
+}
+
+p {
+  border-radius: 25px;
+  border: solid 2px black;
+  background-color: coral;
 }/*# sourceMappingURL=cvflex.css.map */
