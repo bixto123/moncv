@@ -8,6 +8,16 @@
   border-bottom: $style $size $color;
 }
 
+@mixin containerborder($style: solid, $size: 2px, $color: black) {
+  border-right: $style $size $color;
+  border-bottom: $style $size $color;
+}
+
+@mixin tableborder($style: solid, $size: 2px, $color: black) {
+  border-left: $style $size $color;
+  border-top: $style $size $color;  
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -61,15 +71,53 @@ h1, h2 {
   @include roundedbox;
 }
 
-table {
-  background-color: black;
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: calc(16 + 2) * 6px;
+  border: solid 2px black;
 }
 
-th, td {
-  background-color:coral;
+.cell {
+  background-color: coral;
 }
 
-p {
+.bordercontainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: calc(16 + 4) * 5px;
+  @include containerborder;
+}
+
+.bordercell {
+  @include tableborder;
+  background-color: coral;
+}
+
+.doublelinecontainera {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: calc((16 + 3) * 2) * 3px;
+  @include containerborder;
+}
+
+.doublelinecell {
+  @include tableborder;
+  background-color: coral;
+}
+
+.doublelinecontainerb {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: calc((16 + 3) * 2) * 6px;
+  @include containerborder;
+}
+
+.git {
   @include roundedbox;
   background-color: coral;
 }

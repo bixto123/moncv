@@ -53,15 +53,58 @@ h1, h2 {
   border: solid 2px black;
 }
 
-table {
-  background-color: black;
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 108px;
+  border: solid 2px black;
 }
 
-th, td {
+.cell {
   background-color: coral;
 }
 
-p {
+.bordercontainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100px;
+  border-right: solid 2px black;
+  border-bottom: solid 2px black;
+}
+
+.bordercell {
+  border-left: solid 2px black;
+  border-top: solid 2px black;
+  background-color: coral;
+}
+
+.doublelinecontainera {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 114px;
+  border-right: solid 2px black;
+  border-bottom: solid 2px black;
+}
+
+.doublelinecell {
+  border-left: solid 2px black;
+  border-top: solid 2px black;
+  background-color: coral;
+}
+
+.doublelinecontainerb {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 228px;
+  border-right: solid 2px black;
+  border-bottom: solid 2px black;
+}
+
+.git {
   border-radius: 25px;
   border: solid 2px black;
   background-color: coral;
